@@ -5,5 +5,11 @@ function solve(x,y) {
     return 0;
   } else if ((x <= 10 && x > 5) && (y <= 10 && y >= 0)) {
     return 1;
-  } 
+  } else if ((y <= 10 && y > 5) && (x <= 10 && x >= 0)) {
+    return 1;
+  } else if ((x <= 5 && x > 1) && (y <= 10 && y >= 0)) {
+    return 5;
+  } else if ((y <= 5 && y > 1) && (x <= 10 && x >= 0)) {
+    return 5;
+  }
 }
