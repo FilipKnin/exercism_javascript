@@ -11,5 +11,9 @@ function solve(x,y) {
     return 5;
   } else if ((y <= 5 && y > 1) && (x <= 10 && x >= 0)) {
     return 5;
+  } else if ((x <= 1 && x >= 0) && (y <= 10 && y >= 0)) {
+    return 10;
+  } else if ((y <= 1 && y >= 0) && (x <= 10 && x >= 0)) {
+    return 10;
   }
 }
