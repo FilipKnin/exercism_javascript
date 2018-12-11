@@ -15,7 +15,7 @@ describe('Return the correct amount earned by a dart landing in a given point in
     expect(solve(x, y)).toEqual(expected);
   });
 
-  xtest('Input is not a number', () => {
+  test('Input is not a number', () => {
     const x = 'WRONG';
     const y = 10;
     expect(solve(x, y)).toBeNull();

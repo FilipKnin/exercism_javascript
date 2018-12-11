@@ -15,5 +15,7 @@ function solve(x,y) {
     return 10;
   } else if ((y <= 1 && y >= 0) && (x <= 10 && x >= 0)) {
     return 10;
+  } else if (x != NaN || y != NaN) {
+    return null;
   }
 }
