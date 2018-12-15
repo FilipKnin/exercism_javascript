@@ -5,15 +5,15 @@ describe('Hamming', () => {
     expect(compute('', '')).toEqual(0);
   });
 
-  xtest('no difference between identical strands', () => {
+  test('no difference between identical strands', () => {
     expect(compute('A', 'A')).toEqual(0);
   });
 
-  xtest('long identical strands', () => {
+  test('long identical strands', () => {
     expect(compute('GGACTGA', 'GGACTGA')).toEqual(0);
   });
 
-  xtest('complete distance in single nucleotide strands', () => {
+  test('complete distance in single nucleotide strands', () => {
     expect(compute('A', 'G')).toEqual(1);
   });
 
