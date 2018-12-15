@@ -15,6 +15,9 @@ function toRna(dna) {
     } else if (dnaNucleotide === 'A') {
       let rnaNucleotide = 'U';
       rna.push(rnaNucleotide);
+    } else if (dnaNucleotide === 'T') {
+      let rnaNucleotide = 'A';
+      rna.push(rnaNucleotide);
     }
 
   }
