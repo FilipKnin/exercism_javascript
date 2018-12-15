@@ -5,7 +5,7 @@ describe('Transcriptor', () => {
     expect(toRna('')).toEqual('');
   });
 
-  xtest('transcribes cytosine to guanine', () => {
+  test('transcribes cytosine to guanine', () => {
     expect(toRna('C')).toEqual('G');
   });
 
@@ -21,7 +21,7 @@ describe('Transcriptor', () => {
     expect(toRna('T')).toEqual('A');
   });
 
-  xtest('transcribes all dna nucleotides to their rna complements', () => {
+  test('transcribes all dna nucleotides to their rna complements', () => {
     expect(toRna('ACGTGGTCTTAA'))
       .toEqual('UGCACCAGAAUU');
   });
