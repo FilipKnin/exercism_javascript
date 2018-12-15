@@ -18,12 +18,11 @@ function toRna(dna) {
     } else if (dnaNucleotide === 'T') {
       let rnaNucleotide = 'A';
       rna.push(rnaNucleotide);
+    } else {
+      throw 'Invalid input DNA.';
     }
 
   }
-  return rna.join('');
+    return rna.join('');
 
-  //split dna into array of letters and store it in variable
-  //loop over dnaArray and transcript dna into rna
-  //
 }
