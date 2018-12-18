@@ -14,10 +14,11 @@ const allSides = [this.side1, this.side2, this.side3];
 
   if ( ( (this.side1 + this.side2) / 2) === (this.side3)) {
     return 'equilateral';
-  } else if (
+  } else if
+  (
     (this.side1 === this.side2) || (this.side1 === this.side3)
-
-
+    ||
+    (this.side2 === this.side3)
   ) {
     return 'isosceles';
   }
