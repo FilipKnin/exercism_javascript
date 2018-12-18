@@ -63,7 +63,7 @@ describe('Triangle', () => {
     expect(triangle.kind.bind(triangle)).toThrow();
   });
 
-  xtest('triangles violating triangle inequality are illegal', () => {
+  test('triangles violating triangle inequality are illegal', () => {
     const triangle = new Triangle(1, 1, 3);
     expect(triangle.kind.bind(triangle)).toThrow();
   });
