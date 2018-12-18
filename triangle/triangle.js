@@ -21,6 +21,8 @@ const allSides = [this.side1, this.side2, this.side3];
     (this.side2 === this.side3)
   ) {
     return 'isosceles';
+  } else {
+    return 'scalene';
   }
 };
 
