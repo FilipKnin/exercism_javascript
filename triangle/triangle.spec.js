@@ -53,7 +53,7 @@ describe('Triangle', () => {
     expect(triangle.kind()).toEqual('scalene');
   });
 
-  xtest('test triangles with no size are illegal', () => {
+  test('test triangles with no size are illegal', () => {
     const triangle = new Triangle(0, 0, 0);
     expect(triangle.kind.bind(triangle)).toThrow();
   });

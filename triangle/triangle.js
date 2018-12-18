@@ -12,10 +12,12 @@ const allSides = [this.side1, this.side2, this.side3];
 
 //loop over array of three sides
 
-  if ( ( (this.side1 + this.side2) / 2) === (this.side3)) {
+  if (
+    this.side1 === 0 || this.side2 === 0 
+    return 'test'
+  } else if ( ( (this.side1 + this.side2) / 2) === (this.side3) ) {
     return 'equilateral';
-  } else if
-  (
+  } else if (
     (this.side1 === this.side2) || (this.side1 === this.side3)
     ||
     (this.side2 === this.side3)
