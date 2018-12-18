@@ -13,8 +13,9 @@ const allSides = [this.side1, this.side2, this.side3];
 //loop over array of three sides
 
   if (
-    this.side1 === 0 || this.side2 === 0 
-    return 'test'
+    this.side1 === 0 || this.side2 === 0 || this.side3 === 0
+  ) {
+    throw 'triangles with no size are illegal
   } else if ( ( (this.side1 + this.side2) / 2) === (this.side3) ) {
     return 'equilateral';
   } else if (
