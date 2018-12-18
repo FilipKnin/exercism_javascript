@@ -28,7 +28,7 @@ describe('Triangle', () => {
     expect(triangle.kind()).toEqual('isosceles');
   });
 
-  xtest('isosceles triangles have in fact exactly two sides equal', () => {
+  test('isosceles triangles have in fact exactly two sides equal', () => {
     const triangle = new Triangle(10, 10, 2);
     expect(triangle.kind()).toEqual('isosceles');
   });
