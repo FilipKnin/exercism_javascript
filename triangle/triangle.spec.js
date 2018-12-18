@@ -1,4 +1,6 @@
-import Triangle from './triangle';
+// import Triangle from './triangle';
+const Triangle = require('./triangle');
+
 
 describe('Triangle', () => {
   test('equilateral triangles have equal sides', () => {
@@ -6,7 +8,7 @@ describe('Triangle', () => {
     expect(triangle.kind()).toEqual('equilateral');
   });
 
-  xtest('larger equilateral triangles also have equal sides', () => {
+  test('larger equilateral triangles also have equal sides', () => {
     const triangle = new Triangle(10, 10, 10);
     expect(triangle.kind()).toEqual('equilateral');
   });
