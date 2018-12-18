@@ -17,7 +17,9 @@ const allSides = [this.side1, this.side2, this.side3];
   ) {
     throw 'triangles with no size are illegal';
   } else if (
-    this.side1 + this.side2 < this.side3
+    (this.side1 + this.side2 < this.side3)
+    ||
+    (this.side2 + this.side3 < this.side1)
 
   ) {
     throw 'triangles violating triangle inequality are illegal';
