@@ -7,11 +7,6 @@ const Triangle = function (side1, side2, side3) {
 
 Triangle.prototype.kind = function () {
 
-const allSides = [this.side1, this.side2, this.side3];
-// create variable which stores value of first side;
-
-//loop over array of three sides
-
   if (
     this.side1 <= 0 || this.side2 <= 0 || this.side3 <= 0
   ) {
