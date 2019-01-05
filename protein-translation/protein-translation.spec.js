@@ -49,7 +49,7 @@ describe('ProteinTranslation', () => {
     expect(translate('AUGUUUUCU')).toEqual(['Methionine', 'Phenylalanine', 'Serine']);
   });
 
-  xtest('Stop codon ends translation', () => {
+  test('Stop codon ends translation', () => {
     expect(translate('AUGUUUUCUUAAAUG')).toEqual(['Methionine', 'Phenylalanine', 'Serine']);
   });
 
