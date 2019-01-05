@@ -18,6 +18,8 @@ function translate(rna) {
          proteins.push('Leucine')
        } else if (singleCodon === 'UCU' || singleCodon === 'UCC' || singleCodon === 'UCA' || singleCodon === 'UCG') {
          proteins.push('Serine')
+       } else if (singleCodon === 'UAU' || singleCodon === 'UAC') {
+         proteins.push('Tyrosine')
        }
     }
 
