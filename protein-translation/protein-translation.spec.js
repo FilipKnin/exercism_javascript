@@ -25,7 +25,7 @@ describe('ProteinTranslation', () => {
     expect(translate('UAUUAC')).toEqual(['Tyrosine', 'Tyrosine']);
   });
 
-  xtest('Cysteine codons translate into protein', () => {
+  test('Cysteine codons translate into protein', () => {
     expect(translate('UGUUGC')).toEqual(['Cysteine', 'Cysteine']);
   });
 

@@ -20,13 +20,15 @@ function translate(rna) {
          proteins.push('Serine')
        } else if (singleCodon === 'UAU' || singleCodon === 'UAC') {
          proteins.push('Tyrosine')
+       } else if (singleCodon === 'UGU' || singleCodon === 'UGC') {
+         proteins.push('Cysteine')
        }
     }
 
     return proteins;
   }
 
-
+UGU, UGC
 
 }
 
