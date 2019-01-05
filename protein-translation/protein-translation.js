@@ -16,12 +16,13 @@ function translate(rna) {
          proteins.push('Phenylalanine')
        } else if (singleCodon === 'UUA' || singleCodon === 'UUG') {
          proteins.push('Leucine')
+       } else if (singleCodon === 'UCU' || singleCodon === 'UCC' || singleCodon === 'UCA' || singleCodon === 'UCG') {
+         proteins.push('Serine')
        }
     }
 
     return proteins;
   }
-
 
 
 

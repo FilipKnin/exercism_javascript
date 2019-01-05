@@ -17,7 +17,7 @@ describe('ProteinTranslation', () => {
     expect(translate('UUAUUG')).toEqual(['Leucine', 'Leucine']);
   });
 
-  xtest('Serine codons translate into protein', () => {
+  test('Serine codons translate into protein', () => {
     expect(translate('UCUUCCUCAUCG')).toEqual(['Serine', 'Serine', 'Serine', 'Serine']);
   });
 
