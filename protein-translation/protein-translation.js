@@ -10,8 +10,10 @@ function translate(rna) {
 
     for (let i = 0; i < codons.length; i++) {
       let singleCodon = codons[i];
-       if (singleCodon = 'AUG') {
+       if (singleCodon === 'AUG') {
          proteins.push('Methionine')
+       } else if (singleCodon === 'UUU' || singleCodon === 'UUC') {
+         proteins.push('Phenylalanine')
        }
     }
 
