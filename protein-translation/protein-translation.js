@@ -14,6 +14,8 @@ function translate(rna) {
          proteins.push('Methionine')
        } else if (singleCodon === 'UUU' || singleCodon === 'UUC') {
          proteins.push('Phenylalanine')
+       } else if (singleCodon === 'UUA' || singleCodon === 'UUG') {
+         proteins.push('Leucine')
        }
     }
 

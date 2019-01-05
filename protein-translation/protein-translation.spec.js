@@ -13,7 +13,7 @@ describe('ProteinTranslation', () => {
     expect(translate('UUUUUC')).toEqual(['Phenylalanine', 'Phenylalanine']);
   });
 
-  xtest('Leucine codons translate into protein', () => {
+  test('Leucine codons translate into protein', () => {
     expect(translate('UUAUUG')).toEqual(['Leucine', 'Leucine']);
   });
 
