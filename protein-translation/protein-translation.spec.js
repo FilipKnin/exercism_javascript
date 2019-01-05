@@ -29,7 +29,7 @@ describe('ProteinTranslation', () => {
     expect(translate('UGUUGC')).toEqual(['Cysteine', 'Cysteine']);
   });
 
-  xtest('Tryptophan codon translates into protein', () => {
+  test('Tryptophan codon translates into protein', () => {
     expect(translate('UGG')).toEqual(['Tryptophan']);
   });
 

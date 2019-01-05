@@ -22,13 +22,15 @@ function translate(rna) {
          proteins.push('Tyrosine')
        } else if (singleCodon === 'UGU' || singleCodon === 'UGC') {
          proteins.push('Cysteine')
+       } else if (singleCodon === 'UGG') {
+         proteins.push('Tryptophan')
        }
     }
 
     return proteins;
   }
 
-UGU, UGC
+
 
 }
 
