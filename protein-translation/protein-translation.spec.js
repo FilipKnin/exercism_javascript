@@ -45,7 +45,7 @@ describe('ProteinTranslation', () => {
     expect(translate('UGAUGU')).toEqual([]);
   });
 
-  xtest('Small RNA strand', () => {
+  test('Small RNA strand', () => {
     expect(translate('AUGUUUUCU')).toEqual(['Methionine', 'Phenylalanine', 'Serine']);
   });
 
