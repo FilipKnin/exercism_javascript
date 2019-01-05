@@ -24,13 +24,15 @@ function translate(rna) {
          proteins.push('Cysteine')
        } else if (singleCodon === 'UGG') {
          proteins.push('Tryptophan')
+       } else if (singleCodon === 'UAA' || singleCodon === 'UAG' || singleCodon === 'UGA') {
+         return [];
        }
     }
 
     return proteins;
   }
 
-
+UAA, UAG, UGA
 
 }
 
