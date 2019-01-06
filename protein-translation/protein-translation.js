@@ -26,6 +26,8 @@ function translate(rna) {
          proteins.push('Tryptophan')
        } else if (singleCodon === 'UAA' || singleCodon === 'UAG' || singleCodon === 'UGA') {
          break;
+       } else {
+         throw 'Invalid codon'
        }
     }
 
