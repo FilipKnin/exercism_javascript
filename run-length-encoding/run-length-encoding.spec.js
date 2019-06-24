@@ -1,7 +1,7 @@
 import { encode, decode } from './run-length-encoding';
 
 describe('run-length encode a string', () => {
-  test('encode empty string', () => {
+  xtest('encode empty string', () => {
     expect(encode('')).toEqual('');
   });
 
@@ -13,7 +13,7 @@ describe('run-length encode a string', () => {
     expect(encode('AABBBCCCC')).toEqual('2A3B4C');
   });
 
-  xtest('encode string with single characters mixed with repeated characters', () => {
+  test('encode string with single characters mixed with repeated characters', () => {
     expect(encode('WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB')).toEqual('12WB12W3B24WB');
   });
 
