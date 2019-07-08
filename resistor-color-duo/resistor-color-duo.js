@@ -6,12 +6,7 @@
 const COLORS = ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"];
 
 function encodeColor(colorInput) {
-  for (let i = 0; i < COLORS.length; i++) {
-    let singleColor = COLORS[i];
-    if (singleColor === colorInput) {
-      return i;
-    }
-  }
+  return COLORS.findIndex(singleColor => singleColor === colorInput);
 };
 
 export const value = (colorsInput) => {
@@ -19,5 +14,5 @@ export const value = (colorsInput) => {
   let secondColor = colorsInput[1];
   let encodedColors = [];
   encodedColors.push(encodeColor(firstColor), encodeColor(secondColor));
-  return parseInt(encodedColors.join(''));
+  return Number(encodedColors.join(''));
 };
